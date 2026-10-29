@@ -1,0 +1,72 @@
+{
+  "method": "judge",
+  "tasks": [
+    "QA",
+    "Summary",
+    "Data2txt"
+  ],
+  "split": "test",
+  "seed": 42,
+  "judge_model": "llama3.2:3b",
+  "cost_usd_per_1000_answers": 0.0,
+  "parse_errors": 5,
+  "overall": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "accuracy": 0.69,
+    "tp": 0,
+    "fp": 0,
+    "fn": 93,
+    "tn": 207,
+    "auroc": 0.5,
+    "n": 300,
+    "hallucination_rate": 0.31
+  },
+  "per_task": {
+    "Data2txt": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.39285714285714285,
+      "tp": 0,
+      "fp": 0,
+      "fn": 51,
+      "tn": 33,
+      "auroc": 0.5,
+      "n": 84,
+      "hallucination_rate": 0.6071428571428571
+    },
+    "QA": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.8333333333333334,
+      "tp": 0,
+      "fp": 0,
+      "fn": 17,
+      "tn": 85,
+      "auroc": 0.5,
+      "n": 102,
+      "hallucination_rate": 0.16666666666666666
+    },
+    "Summary": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.7807017543859649,
+      "tp": 0,
+      "fp": 0,
+      "fn": 25,
+      "tn": 89,
+      "auroc": 0.5,
+      "n": 114,
+      "hallucination_rate": 0.21929824561403508
+    }
+  },
+  "latency_ms": {
+    "mean": 1597.0452056666802,
+    "p50": 1185.3027999995902,
+    "p95": 3352.278599999863
+  }
+}

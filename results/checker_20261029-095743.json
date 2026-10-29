@@ -1,0 +1,85 @@
+{
+  "method": "checker",
+  "tasks": [
+    "QA",
+    "Summary",
+    "Data2txt"
+  ],
+  "split": "test",
+  "seed": 42,
+  "nli_model": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "tuned_threshold": 0.9847,
+  "tuned_train_f1": 0.7035830618892508,
+  "overall": {
+    "precision": 0.359375,
+    "recall": 0.989247311827957,
+    "f1": 0.5272206303724929,
+    "accuracy": 0.45,
+    "tp": 92,
+    "fp": 164,
+    "fn": 1,
+    "tn": 43,
+    "auroc": 0.730481533426835,
+    "n": 300,
+    "hallucination_rate": 0.31
+  },
+  "overall_tuned": {
+    "precision": 0.45108695652173914,
+    "recall": 0.8924731182795699,
+    "f1": 0.5992779783393501,
+    "accuracy": 0.63,
+    "tp": 83,
+    "fp": 101,
+    "fn": 10,
+    "tn": 106,
+    "auroc": 0.730481533426835,
+    "n": 300,
+    "hallucination_rate": 0.31
+  },
+  "per_task": {
+    "Data2txt": {
+      "precision": 0.6144578313253012,
+      "recall": 1.0,
+      "f1": 0.7611940298507462,
+      "accuracy": 0.6190476190476191,
+      "tp": 51,
+      "fp": 32,
+      "fn": 0,
+      "tn": 1,
+      "auroc": 0.5172311348781937,
+      "n": 84,
+      "hallucination_rate": 0.6071428571428571
+    },
+    "QA": {
+      "precision": 0.3793103448275862,
+      "recall": 0.6470588235294118,
+      "f1": 0.4782608695652174,
+      "accuracy": 0.7647058823529411,
+      "tp": 11,
+      "fp": 18,
+      "fn": 6,
+      "tn": 67,
+      "auroc": 0.772318339100346,
+      "n": 102,
+      "hallucination_rate": 0.16666666666666666
+    },
+    "Summary": {
+      "precision": 0.2916666666666667,
+      "recall": 0.84,
+      "f1": 0.4329896907216495,
+      "accuracy": 0.5175438596491229,
+      "tp": 21,
+      "fp": 51,
+      "fn": 4,
+      "tn": 38,
+      "auroc": 0.6528089887640449,
+      "n": 114,
+      "hallucination_rate": 0.21929824561403508
+    }
+  },
+  "latency_ms": {
+    "mean": 407.45569200080354,
+    "p50": 349.16009998414665,
+    "p95": 752.58130003931
+  }
+}

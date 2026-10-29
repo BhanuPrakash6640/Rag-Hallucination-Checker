@@ -1,0 +1,18 @@
+# Core ML
+torch>=2.2
+transformers>=4.40
+sentence-transformers>=3.0
+faiss-cpu>=1.8
+
+# LLM client (works with Ollama, Groq, OpenAI, or any OpenAI-compatible server)
+openai>=1.30
+
+# Documents, UI, utilities
+pypdf>=4.0
+streamlit>=1.35
+python-dotenv>=1.0
+tqdm>=4.66
+numpy>=1.26
+
+# Testing
+pytest>=8.0
